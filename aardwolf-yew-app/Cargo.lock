@@ -3,14 +3,9 @@
 version = 3
 
 [[package]]
-name = "aardwolf-interface-templates"
-version = "0.0.1"
-
-[[package]]
 name = "aardwolf-yew-app"
 version = "0.1.0"
 dependencies = [
- "aardwolf-interface-templates",
  "log",
  "serde",
  "serde_json",

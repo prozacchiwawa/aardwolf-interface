@@ -1,13 +1,15 @@
 use yew::prelude::*;
 use serde::{Serialize, Deserialize};
 
+#[path = "../templates"]
+mod templates {
+    mod elements;
+}
+
 // ybc crate imports -- https://crates.io/crates/ybc
 use ybc::TileCtx::{Ancestor, Child, Parent};
 use ybc::TileSize;
 use ybc::NavbarFixed;
-
-// Allow ../elements/*.rs to be used here
-mod templates;
 
 // Lets make a struct for testing console logging
 #[derive(Serialize, Deserialize)] 
